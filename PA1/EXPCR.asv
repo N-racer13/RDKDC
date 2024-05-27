@@ -1,0 +1,6 @@
+function[Rot] = EXPCR(x)
+    theta = norm(x);
+    n = x/norm(x);
+    Rot = eye(3) + SKEW3(x)*sin(theta) + SKEW3()
+    
+end
